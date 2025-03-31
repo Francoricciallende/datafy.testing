@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prueba de Formulario</title>
+  <style>
+    /* Estilos básicos para pruebas */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      padding: 2rem;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 1.5rem;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    form div {
+      margin-bottom: 1rem;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form button {
+      background: #2E8A99;
+      color: #fff;
+      border: none;
+      padding: 0.8rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <form action="https://formsubmit.co/info@datafy.lat" method="POST">
+    <input type="hidden" name="_next" value="https://datafy.lat/gracias.html">
+    <input type="hidden" name="_captcha" value="false">
+
+    <div>
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" required>
+    </div>
+
+    <div>
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <button type="submit">Enviar mensaje</button>
+  </form>
+</body>
+</html>

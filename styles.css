@@ -215,3 +215,24 @@ footer .social-icons img {
 .fade-in {
     animation: fadeIn 1s ease-in-out;
 }
+/* Reset específico para el formulario */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Espaciado entre campos */
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    font-size: 1rem;
+}
