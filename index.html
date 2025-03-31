@@ -4,206 +4,110 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Datafy - Consultoría en Análisis de Datos</title>
-  <style>
-    /* Reset básico */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Roboto', sans-serif;
-      background-color: #F5F5F5;
-      color: #333333;
-      line-height: 1.6;
-    }
-
-    /* Header */
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #0A2647;
-      color: #FFFFFF;
-      padding: 1rem;
-    }
-
-    header img.logo {
-      height: 50px;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1rem;
-    }
-
-    nav ul li a {
-      color: #FFFFFF;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
-
-    nav ul li a:hover {
-      color: #2E8A99;
-    }
-
-    .dropdown-menu {
-      display: none;
-      position: absolute;
-      background-color: #0A2647;
-      list-style: none;
-      padding: 0.5rem 0;
-    }
-
-    .dropdown:hover .dropdown-menu {
-      display: block;
-    }
-
-    .lang-btn {
-      background-color: #2E8A99;
-      padding: 0.5rem 1rem;
-      border-radius: 4px;
-    }
-
-    /* Hero Section */
-    .hero {
-      text-align: center;
-      padding: 4rem 1rem;
-      background-color: #144272;
-      color: #FFFFFF;
-    }
-
-    .hero h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-    }
-
-    /* Reporte Demo */
-    .reporte-demo {
-      padding: 2rem;
-      text-align: center;
-    }
-
-    .reporte-demo iframe {
-      width: 100%;
-      max-width: 800px;
-      margin: 0 auto;
-      border: none;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Contact Form */
-    .contact-form {
-      padding: 2rem;
-      background-color: #FFFFFF;
-      text-align: center;
-    }
-
-    .contact-form h2 {
-      margin-bottom: 1rem;
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-      width: 100%;
-      max-width: 600px;
-      margin: 0.5rem auto;
-      padding: 0.8rem;
-      border: 1px solid #CCCCCC;
-      border-radius: 4px;
-    }
-
-    .contact-form button {
-      background-color: #2E8A99;
-      color: #FFFFFF;
-      border: none;
-      padding: 0.8rem 1.5rem;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    .contact-form button:hover {
-      background-color: #144272;
-    }
-
-    /* Footer */
-    footer {
-      background-color: #0A2647;
-      color: #FFFFFF;
-      text-align: center;
-      padding: 1rem;
-    }
-
-    /* Animaciones */
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    .fade-in {
-      animation: fadeIn 1s ease-in-out;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <img src="img/LOGO_DATAFY_1.jpg" alt="Logo Datafy" class="logo fade-in" />
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li class="dropdown">
-          <a href="#">Soluciones</a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Analytics</a></li>
-            <li><a href="#">Advertising</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Precios</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-        <li><a href="index-en.html" class="lang-btn">English</a></li>
-      </ul>
-    </nav>
+  <header class="sticky-header">
+    <div class="container">
+      <div class="logo">
+        <img src="img/LOGO_DATAFY_1.jpg" alt="Logo Datafy" class="logo fade-in" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li class="dropdown">
+            <a href="#">Soluciones</a>
+            <ul class="dropdown-menu">
+              <li><a href="#analytics">Analytics</a></li>
+              <li><a href="#advertising">Advertising</a></li>
+            </ul>
+          </li>
+          <li><a href="#pricing">Precios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="index-en.html" class="lang-btn">English</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section class="hero fade-in">
-      <h1>Consultoría en Análisis de Datos & Business Intelligence</h1>
-      <p>Transformamos tus datos en decisiones estratégicas.</p>
+    <section id="home" class="hero fade-in">
+      <div class="container">
+        <h1>Consultoría en Análisis de Datos & Business Intelligence</h1>
+        <p>Transformamos tus datos en decisiones estratégicas.</p>
+      </div>
     </section>
 
-    <section class="reporte-demo fade-in">
-      <h2>Ejemplo de Proyecto</h2>
-      <iframe title="Curso Compilado PBI" width="100%" height="400" src="https://app.powerbi.com/view?r=eyJrIjoiZDYxZjFlNDUtZDVlOS00ZDY5LWE2ZTUtYjAzMDZjNzNkOGIwIiwidCI6IjAzZmMzOGQ5LTkzMWYtNDk1Yi04MGJhLWQxNGM1ZDVkMWYxZCIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+    <section id="solutions" class="solutions fade-in">
+      <div class="container">
+        <h2>Nuestras Soluciones</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Analytics</h3>
+            <p>Obten insights accionables con nuestros servicios avanzados de análisis de datos.</p>
+          </div>
+          <div class="card">
+            <h3>Advertising</h3>
+            <p>Optimiza tus campañas publicitarias con estrategias basadas en datos.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="contact-form fade-in" id="contacto">
-      <h2>Contacto</h2>
-      <form action="https://formsubmit.co/info@datafy.lat" method="POST">
-        <input type="hidden" name="_next" value="https://datafy.lat/gracias.html">
-        <input type="hidden" name="_captcha" value="false">
+    <section id="projects" class="projects fade-in">
+      <div class="container">
+        <h2>Ejemplo de Proyecto</h2>
+        <iframe title="Ejemplo Power BI" width="100%" height="400" src="https://app.powerbi.com/view?r=eyJrIjoiZDYxZjFlNDUtZDVlOS00ZDY5LWE2ZTUtYjAzMDZjNzNkOGIwIiwidCI6IjAzZmMzOGQ5LTkzMWYtNDk1Yi04MGJhLWQxNGM1ZDVkMWYxZCIsImMiOjR9" frameborder="0" allowfullscreen="true"></iframe>
+      </div>
+    </section>
 
-        <input type="text" name="nombre" placeholder="Nombre" required />
-        <input type="email" name="email" placeholder="Correo electrónico" required />
-        <input type="text" name="telefono" placeholder="Teléfono de contacto" />
-        <input type="text" name="provincia" placeholder="Provincia" />
-        <input type="text" name="pais" placeholder="País" />
-        <textarea name="mensaje" placeholder="Tu mensaje" rows="5" required></textarea>
-        <button type="submit">Enviar mensaje</button>
-      </form>
+    <section id="contacto" class="contact fade-in">
+      <div class="container">
+        <h2>Contacto</h2>
+        <form action="https://formsubmit.co/info@datafy.lat" method="POST">
+          <input type="hidden" name="_next" value="https://datafy.lat/gracias.html">
+          <input type="hidden" name="_captcha" value="false">
+
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required />
+          </div>
+
+          <div class="form-group">
+            <label for="telefono">Teléfono</label>
+            <input type="text" id="telefono" name="telefono" placeholder="Tu teléfono" />
+          </div>
+
+          <div class="form-group">
+            <label for="provincia">Provincia</label>
+            <input type="text" id="provincia" name="provincia" placeholder="Tu provincia" />
+          </div>
+
+          <div class="form-group">
+            <label for="pais">País</label>
+            <input type="text" id="pais" name="pais" placeholder="Tu país" />
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje" required></textarea>
+          </div>
+
+          <button type="submit">Enviar mensaje</button>
+        </form>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Datafy. Todos los derechos reservados.</p>
+    <div class="container">
+      <p>&copy; 2025 Datafy. Todos los derechos reservados.</p>
+    </div>
   </footer>
 </body>
 </html>
